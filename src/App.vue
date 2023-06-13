@@ -28,8 +28,14 @@ export default {
     <h2>Lista Dei Progetti</h2>
     <div class="row row-cols-4 g-3">
       <div class="col" v-for="project in projects" :key="project.id">
-        <div class="card">
-            <h4>{{ project.title }}</h4>
+        <img  v-if="project.image" :src="`http://127.0.0.1:8000/storage/${project.image}`" class="card-img-top" alt="">
+        <div v-else >
+          Nessuna immagine presente 
+        </div>
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>{{ project.title }}</h5>
+          </div> 
         </div>
       </div>
     </div>
