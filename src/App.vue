@@ -24,7 +24,16 @@ export default {
 
 
 <template>
-  <h1>Hello</h1>
+  <div class="container">
+    <h2>Lista Dei Progetti</h2>
+    <div class="row row-cols-4">
+      <div class="col">
+        <div class="card" v-for="project in projects" :key="project.id">
+            <h4>{{ project.title }}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 
