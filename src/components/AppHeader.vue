@@ -10,15 +10,11 @@ export default {
                 },
                 {
                     label: "Project",
-                    routeName: "project"
+                    routeName: "projects"
                 },
                 {
-                    label: "Project",
-                    routeName: "project"
-                },
-                {
-                    label: "Project",
-                    routeName: "project"
+                    label: "About Us",
+                    routeName: "about"
                 },
             ]
         }
