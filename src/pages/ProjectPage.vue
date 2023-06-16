@@ -32,8 +32,10 @@ components: {ProjectCard}
             <div class="row row-cols-4 g-3">
             <div class="col" v-for="project in projects" :key="project.id">
                 <ProjectCard :project="project"/>
+                
             </div>
             </div>
+           
         </div>
 
 </template>

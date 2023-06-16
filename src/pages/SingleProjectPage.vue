@@ -1,6 +1,9 @@
 <script>
 export default{
-    name: "SingleProjectPage"
+    name: "Singl(eProjectPage",
+    mounted(){
+        console.log(this.$route);
+    }
 }
 
 </script>

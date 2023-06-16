@@ -18,7 +18,9 @@ export default{
           <div class="card-body">
             <h5>{{ project.title }}</h5>
           </div> 
+          <router-link :to="{name : 'single-project' , params: { slug: project.slug}}" class="btn btn-primary">Leggi</router-link>
         </div>
+       
 </template>
 
 
